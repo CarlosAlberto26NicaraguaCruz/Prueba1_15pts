@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <link rel="stylesheet" href="C:\xampp\htdocs\LABORATORIOS\Trabajode4Ejercicios\css\mistyloejercicio2.css">
+	<title>IMC</title>
+	
+
+</head>
+<body>
+
+
+<div>
+  
+  <p>
+    Implementar sencilla utilidad de calculadora de divisas dólares a córdobas y de córdobas a dólares. Elaborar con HTML sencillo formulario donde el usuario pueda ingresar cantidad de entrada de dólares o córdobas a través de un combobox (select-option) y un PHP (calcular.php) para calcular la conversión de moneda. El PHP leerá los valores de entrada de HTML y realizara la conversión.
+  </p>
+
+<h4>Carlculadora de divisas (De dolares a cordobas) y (De cordobas a dolares)</h4>
+     
+
+ <form action="Diseno2.php" method="post">
+  
+      <input name="cantidad" id="cantidad" type="text" required onkeypress=" " class="validate">
+      <label for="monto">Escriba aqui la cantidad</label>
+   
+        <div class="row">
+          <div class="container">
+            <div class="input-field col s12">
+       <br>
+    <select name="moneda">
+      <option value="" disabled selected>Selecione su moneda</option>
+      <option value="1">Córdobas</option>
+      <option value="2">Dolares</option>
+    </select>
+
+  </div>
+</div>
+      <br>
+       <button>Calcular</button>  
+      </div>
+</div>
+
+
+<div class=" col s6">
+<p> Elaborar calculadora que puede ser utilizado para el cálculo de índice de masa corporal de una persona (IMC). La fórmula para calcular el IMC es el peso / (altura * altura). El usuario puede ingresar peso de entrada (en kilogramos) y la altura (en metros). El PHP (imc.php) ejecutará el cálculo de imprimir el resultado.</p>
+
+
+
+<h4>Indice de Masa Corporal</h4>
+<form method="post" action="Diseno.php">
+  <div class="input-field col s12">
+    <input name="pesar" type="text" class="val" id="pesar">
+    <label for="Peso"> Su Peso en Kilos</label>
+    <br>
+  </div>
+  <br>
+  <div class="input-field col s12">
+    <input name="alto" type="text" class="val" id="alto">
+    <label for="Peso"> Su Altura</label>
+    <br>
+  </div>
+  <div class="row center">
+    <div class="container">
+    <br>
+      
+      <button type="submit"> Calcular</button>
+    </div>
+  </div>
+</form>
+</div>
+
+<div>
+  
+<p>
+  Realizar aplicación web, que puede ser utilizado para calcular los salarios (ingresos netos) calcularlo a través del (pago * hora) * las horas trabajadas también calcular sus deducciones (IR, inss,otros). Diseñar interfaz de usuario para pedir información necesaria y PHP para ejecutar el cálculo e imprimir el resultado.
+</p>
+
+<div class="row center">
+        <div class="container">
+            <h4>Calculos de pagos</h4>
+              <form method="post" action="Diseno3.php">
+           
+            
+        
+          <input name="horas" id="horas" type="text"  class="validate">
+          <label for="horas">Digite la cantida de horas trabajadas</label>
+        </div>
+        <div class="row">
+
+            <div class="row center">
+              <div class="container">
+                  <button>Calcular</button>
+ 
+       </div>
+            </div>
+        </div>
+     
+        </form>
+
+          </div>
+          
+        </div>
+
+<div>
+  <p>
+  Elaborar calculadora para convertir las distancias entre cm, pulgadas, metros y kilómetros. El diseño del html tendra una entrada de texto, 4 botones de checkbox. Los valores serán almacenados en un script PHP (distancia.php) que calcula las conversiones según la entrada del usuario.          
+  </p>
+
+  <form action="distancia.php" method="post">
+
+    <h3>Calcular distancia</h3>
+    
+      <input type="text" name="Distancia"> <br><br>
+            <input type="checkbox" name="metros"/> Metros <br/>
+            <input type="checkbox" name="kilometros" />Kilometros <br/><br>
+            <input type="checkbox" name="centimetro"/> Centimetros <br/>
+            <input type="checkbox" name="pulgadas"/> Pulgadas <br/>
+            
+    <button type="submit"> respuesta </button>
+  </form>
+</div>
+</body>
+</html>
